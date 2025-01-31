@@ -15,7 +15,6 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 .container {
@@ -24,6 +23,10 @@ body {
   padding: 2rem;
   background-color: var(--medium-purple);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+   background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 header {
@@ -42,7 +45,13 @@ header {
   align-items: center;
   background: linear-gradient(45deg, var(--light-purple), var(--accent-purple));
   margin: 0 auto 1rem;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  border: 3px solid #fff; /* Optional: adds a white border */
+  box-shadow: 0 0 20px 10px rgba(106, 13, 173, 0.2); /* Purple glow effect */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
+        }
+
+.profile-image:hover {
+  box-shadow: 0 0 30px 15px rgba(106, 13, 173, 0.6); /* Intensifies glow on hover */
 }
 
 .profile-image img {
