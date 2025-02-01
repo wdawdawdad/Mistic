@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(() => {
       snowflake.remove();
-    }, 5000);
+    }, 7000);
   }
 
   setInterval(createSnowflake, 150);
